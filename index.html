@@ -14,13 +14,33 @@
         <p>Guess what letter I'm thinkin of?</p>
         <p>Wins: </p>
         <p>Losses:</p>
-        <p>Guesses Left</p>
-        <p>Your Guesses so far:</p>
+        <p>Guesses left:</p>
+        <p>Your guesses so far:</p>
 
     </div>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
 
+        //Indicates the letter choices available
+        var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+        //Establishing variables for wins, losses, the number of guesses and the computer choice
+        var win = 0;
+        var lose = 0;
+        var numberofGuesses = 9;
+        var choicesGuessed = [];
+
+        var answerChoice = letterChoices[Math.floor(Math.random() * letterChoices.length)];
+
+        console.log(answerChoice)
+
+        document.onekeyup = function (event) {
+            var yourGuess = event.key;
+            choicesGuessed.push
+
+        }
+
+
+    </script>
 </body>
 
 </html>
