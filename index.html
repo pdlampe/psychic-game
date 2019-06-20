@@ -31,14 +31,36 @@
 
         var answerChoice = letterChoices[Math.floor(Math.random() * letterChoices.length)];
 
+        //Testing the computers letter choice
         console.log(answerChoice)
 
+        //Running the game
         document.onekeyup = function (event) {
             var yourGuess = event.key;
-            choicesGuessed.push
+
+            if (yourGuess === answerChoice) {
+                win++;
+            } else {
+                numberofGuesses--;
+            }
+
+            if (numberofGuesses === 0) {
+                lose++
+            }
+
+            var html =
+
+                "<h1>The Psychic Game </h1>" +
+                "<p>Guess what letter I'm thinkin of?</p>" +
+                "<p>Wins: " + win + "</p>" +
+                "<p>Losses: " + lose + "</p>" +
+                "<p>Guesses Left: " + numberofGuesses + "</p>" +
+                "<p>Your guesses so far:</p>"
+
+
+            document.querySelector("#psychicgame").innerHTML = html;
 
         }
-
 
     </script>
 </body>
