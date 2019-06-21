@@ -35,7 +35,7 @@
         console.log(answerChoice)
 
         //Running the game
-        document.onekeyup = function (event) {
+        document.onkeyup = function (event) {
             var yourGuess = event.key;
 
             if (yourGuess === answerChoice) {
@@ -55,7 +55,7 @@
                 "<p>Wins: " + win + "</p>" +
                 "<p>Losses: " + lose + "</p>" +
                 "<p>Guesses Left: " + numberofGuesses + "</p>" +
-                "<p>Your guesses so far:</p>"
+                "<p>Your guesses so far: " + choicesGuessed + "</p>"
 
 
             document.querySelector("#psychicgame").innerHTML = html;
