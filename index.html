@@ -27,7 +27,7 @@
         var win = 0;
         var lose = 0;
         var numberofGuesses = 9;
-        var choicesGuessed = [];
+
 
         var answerChoice = letterChoices[Math.floor(Math.random() * letterChoices.length)];
 
@@ -55,7 +55,7 @@
                 "<p>Wins: " + win + "</p>" +
                 "<p>Losses: " + lose + "</p>" +
                 "<p>Guesses Left: " + numberofGuesses + "</p>" +
-                "<p>Your guesses so far: " + choicesGuessed + "</p>"
+                "<p>Your guesses so far: " + yourGuess + "</p>"
 
 
             document.querySelector("#psychicgame").innerHTML = html;
